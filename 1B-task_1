@@ -1,0 +1,39 @@
+//question:Change the colour of RBG LED using potentiometer
+#click here to check tinkercad simulation
+https://www.tinkercad.com/things/8eVo63cL5Sq-frantic-bojo-densor/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=NuZ_ITuDe87zLOYKWe1eVXIjb12gSfZcEfgWLpvRvwk
+#code:
+int redpin=2;
+int bluepin=3;
+int greenpin=4;
+int led=7;
+void setup(){
+  pinMode(redpin,OUTPUT);
+  pinMode(bluepin,OUTPUT);
+  pinMode(greenpin,OUTPUT);
+  pinMode(led,OUTPUT);
+}
+void loop(){
+    int pm=analogRead(A0);
+    int converted=map(pm,0,1023,0,255);
+    analogWrite(redpin,converted);
+    analogWrite(bluepin,converted/2);
+    analogWrite(greenpin,converted/4);
+    int delaytime=map(pm,0,1023,100,1000);
+    digitalWrite(led,HIGH);
+    delay(delaytime);
+    digitalWrite(led,LOW);
+    delay(delaytime);
+}
+#COMPONENETS:
+1.Potentiometer
+2.RGB LED
+3.Normal LED
+4.Resistor
+5.Arduino
+#LOGIC
+First we read potentiometer value, map it to (0–255) range from (0-1023) to control RGB LED color by mixing intensities.
+The same value is used to set delay time, which controls the blinking speed of a separate LED.
+#EXPLANATION
+First we read potentiometer value using analogread function then convert using map to required range .
+Then we assign some random values of intensity to each of the led colour. Based on that they may mix and appear while led is in ON. 
+Now for blinking the other led which has time delay based on the potentiometer value we again convert using map function to some particular range where the blinking can be visible in human eye .
