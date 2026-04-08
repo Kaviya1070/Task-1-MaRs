@@ -1,6 +1,6 @@
 //question:Build a reaction time tester
 
-#click here to view tinkercadlink
+#click here to view tinkercadlink(KINDLY USE SERIAL MONITOR TO SEE THE REACTION TIME)
 
 https://www.tinkercad.com/things/g5u5ws7NlLZ-reaction-time-?sharecode=1mujftISSzpl2IM0_QIeowuaJNz-AmlTWPyN0rbLRpA
 
