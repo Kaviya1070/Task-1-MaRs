@@ -1,5 +1,5 @@
 // project :
-OBSTACLE FINDING ROBOT
+OBSTACLE DETECTING ROBOT
 
 //click here to view my tinkercad link
 
