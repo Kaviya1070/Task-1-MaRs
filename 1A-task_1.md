@@ -9,38 +9,66 @@ https://www.tinkercad.com/things/2nPODYCnBaw-blinking-led?sharecode=1yry42pHJcka
 
 `cpp
 int state1=LOW;
+
 int state2=LOW;
+
 int state3=LOW;
 
 
 unsigned long int past1=0;
+
 unsigned long int past2=0;
+
 unsigned long int past3=0;
 
 void setup(){
+
   pinMode(2,OUTPUT);
+  
   pinMode(3,OUTPUT);
+  
   pinMode(4,OUTPUT);
+  
 }
+
 void loop(){
+
   unsigned long int current=millis();
+  
   if(current-past1>=500){
+  
     state1=!state1;
+    
     digitalWrite(2,state1);
+    
     past1=current;
+    
   }
+  
   if(current-past2>=1000){
+  
     state2=!state2;
+    
     digitalWrite(3,state2);
+    
     past2=current;
+    
   }
+  
   if(current-past3>=1500){
+  
     state3=!state3;
+    
     digitalWrite(4,state3);
+    
     past3=current;
+    
   }
+  
 }
+
 `
+
 ##COMPONENETS:
 1.3 LED
 
