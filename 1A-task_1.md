@@ -1,7 +1,7 @@
 
 //question:Build a circuit with 3 led , where leds blink at time interval of 500,1000,1500
 #click here to view my tinkercad link:
-https://www.tinkercad.com/things/b24qckWRNq8-epic-blorr/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=fsSQOWWuAvdFh6qZKfKfdX6CjR9w3AS0wiBEw2S8AmY
+https://www.tinkercad.com/things/2nPODYCnBaw-blinking-led?sharecode=1yry42pHJckaeXGdID359HLpOObyECxOelCqVf-8mJI
 #code 
 int state1=LOW;
 int state2=LOW;
